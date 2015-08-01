@@ -16,3 +16,4 @@
     -@status_ec2.items.take(5).each do |item|
       %strong= item.pubDate.to_s
       %p= item.title.to_s
+    %a{:href => '/about'} About agregated status page

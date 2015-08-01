@@ -11,3 +11,8 @@ get '/' do
   @status_route53 = RSS::Parser.parse("http://status.aws.amazon.com/rss/route53.rss", false)
   haml :status
 end
+
+get '/about' do
+  haml :about
+end
+
