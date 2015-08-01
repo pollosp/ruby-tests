@@ -1,7 +1,7 @@
 # to run
 `be rackup config.ru &`
 
-#documentation used
+#Documentation
 
 - http://www.getlaura.com/how-to-test-a-sinatra-app-with-rspec/
 - http://joeyates.info/2010/04/07/a-beginners-sinatra-tutorial/
