@@ -1,7 +1,9 @@
 %html
   %head
-    %title Agregated status page
+    %link(rel="stylesheet" href="css/styles.css")
+    %title Aggregated status page
   %body
+    %h1 Aggregated service status page
     %h2 Postmark
     -@status_postmark.items.take(5).each do |item|
       %strong= item.pubDate.to_s
@@ -14,4 +16,3 @@
     -@status_ec2.items.take(5).each do |item|
       %strong= item.pubDate.to_s
       %p= item.title.to_s
-
