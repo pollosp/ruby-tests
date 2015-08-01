@@ -1,12 +1,16 @@
 %html
   %head
-    %title hola
+    %title Agregated status page
   %body
     %h2 Postmark
     -@status_postmark.items.take(5).each do |item|
       %strong= item.pubDate.to_s
       %p= item.title.to_s
     %h2 EC2
+    -@status_ec2.items.take(5).each do |item|
+      %strong= item.pubDate.to_s
+      %p= item.title.to_s
+    %h2 Route 53
     -@status_ec2.items.take(5).each do |item|
       %strong= item.pubDate.to_s
       %p= item.title.to_s
